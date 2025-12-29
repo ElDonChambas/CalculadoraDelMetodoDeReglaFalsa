@@ -1,2 +1,1 @@
 # CalculadoraDelMetodoDeReglaFalsa
-# Linktree_Rodrigo_Avila
