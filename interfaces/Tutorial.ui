@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>540</width>
+    <height>791</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>540</width>
+    <height>791</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>540</width>
+    <height>791</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Explicacion del método y del programa</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Icon.png</normaloff>Icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #cfc4b1;</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>521</width>
+     <height>661</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #cfc4b1;
+font-family: Times New Roman;
+font-size: 24px;</string>
+   </property>
+   <property name="text">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman'; font-size:24px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20px;&quot;&gt;Los métodos numéricos se utilizan cuando la solución analítica de un problema es complicada. El método de la regla falsa es un método cerrado que requiere un intervalo [a, b] donde la función cambia de signo, indicando la presencia de al menos una raíz en ese intervalo.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20px;&quot;&gt;El procedimiento consiste en conectar los puntos f(a) y f(b) con una línea recta, formando una cuerda que corta el eje x en un punto (Xo), que es la primera aproximación a la raíz. Luego, se sustituye uno de los extremos del intervalo por (Xo) para mantener el criterio de convergencia f(a) * f(b) &amp;lt; 0). Este proceso se repite hasta que la diferencia entre las aproximaciones sucesivas sea menor que una tolerancia preestablecida.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:20px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20px;&quot;&gt;Este programa, ayuda a resolver ecuaciones que no tienen una solución real, utilizando el método de la regla falsa, donde puedes elegir la variable a utilizar (una sola letra), la función, a la que puedes agregarle signos matemáticos usando el botoón de la calculadora, el valor del intervalo [a, b], y el error viene predefinido, pero puedes modificarlo para que sea más o menos preciso, según sea necesario. &lt;/span&gt;&lt;span style=&quot; font-size:20px; color:#aa0000;&quot;&gt;(Si necesitas agregar a la función un número multiplicando a una variable como 2x, agrega un asterisco enmedio para mostrar que es multiplicación 2*x)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:20px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20px;&quot;&gt;Si hay algún error con los datos, el programa te lo hará saber con una alerta. Si no es así, mostrará la respuesta y todas las iteraciones que se necesitó para llegar a ella.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>541</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #cfc4b1;
+font-family: Times New Roman;
+font-size: 24px;
+border-bottom: 2px solid rgb(69, 85, 61);</string>
+   </property>
+   <property name="text">
+    <string>Método de la regla falsa:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exit">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>740</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color: #FF3B3B ;
+font-family: Times New Roman;
+font-size: 20px;
+border: 2px solid #45553d;
+border-radius: 10px;
+color: white;
+}
+
+QPushButton:hover{
+background-color: #AC0000;
+border: 2px solid white;
+}</string>
+   </property>
+   <property name="text">
+    <string>EXIT</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
